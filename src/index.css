@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navblack {
+  background-color: #000; 
+} 
+
+.navblack a, a:hover, a:active {
+  color: #fff;
+}
