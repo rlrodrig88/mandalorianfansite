@@ -1,8 +1,10 @@
+import React, { Component } from 'react';
+
 class EpisodeGuide extends Component {
     render() {
-          return (
+        return 
               
-          );
+          
       }
   }
 

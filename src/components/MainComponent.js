@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+
 import Home from './HomeComponent';
 import QuoteGenerator from './QuoteGeneratorComponent';
 import ImageGallery from './ImageGalleryComponent';
