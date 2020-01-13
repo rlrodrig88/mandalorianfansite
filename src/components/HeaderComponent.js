@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return(
-          <img src="/assets/images/logo.jpg" className="img-fluid"></img>
+          <img src="/assets/images/logo.jpg" className="img-fluid" alt="Mandolorian Logo"></img>
         );
       }
   }
