@@ -1,20 +1,45 @@
 import React, { Component } from 'react';
+import { Col, Card, Row, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 import { EPISODES } from '../shared/Episodes';
 
-function EpisodeCard(props) {
-  return(
-    <Col sm={12} md={6}>
-      <h1>{episodes.name}</h1>
+function RenderEpisode({ep}) {
+  return (
+    <Col key={ep.id} xs={6} md={4} lg={3}>
+    <Card>
+      <CardBody>
+        <CardImg src={ep.image} />
+        <CardImgOverlay className="epcard">
+          <CardTitle>{ep.name}</CardTitle>
+        </CardImgOverlay>
+        <CardText>{ep.sum_short}</CardText>
+        <CardText><strong>Directed by:</strong> {ep.director}</CardText>
+        <CardText><strong>Written by:</strong> {ep.writer}</CardText>
+      </CardBody>
+    </Card>
     </Col>
   );
 }
 
+
+
 class EpisodeGuide extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      episodes: EPISODES,
+      selectedEpisode: null
+    };
+  }
     render() {
+      const episodesList = this.state.episodes.map(ep => {
+        return (
+            <RenderEpisode ep={ep} />
+        );
+      });
         return(
-          <div>
-            <h1>Episode Guide</h1>
-          </div>
+          <Row>
+            {episodesList}
+          </Row>
         ); 
       }
   }

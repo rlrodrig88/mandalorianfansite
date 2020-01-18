@@ -14,10 +14,16 @@ import MemeGenerator from './MemeGeneratorComponent';
 
 
 
+
+
+
 class Main extends Component {
       render() {
             return (
-                <Home />
+                <React.Fragment>
+                    <Home />
+                    <EpisodeGuide />
+                </React.Fragment>
             );
         }
     }

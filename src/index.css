@@ -19,3 +19,9 @@ code {
 .navblack a, a:hover, a:active {
   color: #fff;
 }
+
+.epcard {
+  background-color: (0,0,0.0.3);
+  text-size: 20px;
+  
+}
