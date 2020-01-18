@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'mandaloreregular';
+  src: url('mandalore.woff2') format('woff2'),
+       url('mandalore.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .card-img-overlay h5 {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
+.cardtitle {
+  height: 100%;
+  font-family: "mandaloreregular";
+}
+
+
