@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Card, Row, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 import { EPISODES } from '../shared/Episodes';
+import { Link } from 'react-router-dom';
 
 function RenderEpisode({ep}) {
   return (
@@ -8,12 +9,12 @@ function RenderEpisode({ep}) {
     <Card>
       <CardBody>
         <CardImg src={ep.image} />
-        <CardImgOverlay className="epcard">
-          <CardTitle>{ep.name}</CardTitle>
-        </CardImgOverlay>
+        
+          <CardTitle className="eptitle">{ep.name}</CardTitle>
+        
         <CardText>{ep.sum_short}</CardText>
-        <CardText><strong>Directed by:</strong> {ep.director}</CardText>
-        <CardText><strong>Written by:</strong> {ep.writer}</CardText>
+        <CardText className="credits"><strong>Directed by:</strong> {ep.director}</CardText>
+        <CardText className="credits"><strong>Written by:</strong> {ep.writer}</CardText>
       </CardBody>
     </Card>
     </Col>

@@ -13,6 +13,7 @@ import {
   DropdownItem,
 } from 'reactstrap';
 
+
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,7 +30,7 @@ const Navigation = (props) => {
               <NavLink href="#">Character Guide</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Episode Guide</NavLink>
+              <NavLink href="/episodes">Episode Guide</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#">Puzzle</NavLink>
@@ -43,4 +44,5 @@ const Navigation = (props) => {
     </div>
   );
 }
+
 export default Navigation;

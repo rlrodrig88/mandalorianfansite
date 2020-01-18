@@ -41,7 +41,7 @@ export const EPISODES = [
     },
     {
         id: 5,
-        name: "Chapter 5: The Gunslinger",
+        name: "Chapter5: The Gunslinger",
         image: "/assets/images/eps/s01e05vul.jpg",
         imagetb: "/assets/images/eps/s01e05tb.jpg",
         sum_short: "The Mandalorian helps a rookie bounty hunter who is in over his head.",

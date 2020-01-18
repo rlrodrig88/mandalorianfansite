@@ -6,15 +6,60 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'mandalore_laserregular';
+  src: url('mandalorelaser.woff2') format('woff2'),
+       url('mandalorelaser.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'mandalore_titleregular';
+  src: url('mandaloretitle.woff2') format('woff2'),
+       url('mandaloretitle.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'mandalore_expandedregular';
+  src: url('mandalorexpand.woff2') format('woff2'),
+       url('mandalorexpand.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .card-img-overlay h5 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  height: 100%;
+}
+
+.navbar {
+  font-family: "mandalore_titleregular";
+  font-size: 20px;
+}
+
+.eptitle {
+  font-family: "mandaloreregular";
+  background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.cardtitle {
-  height: 100%;
-  font-family: "mandaloreregular";
+.credits {
+  font-size: 10;
 }
 
+.logo {
+  max-height: 300px;
+}
 
+.center {
+  justify-content: center;
+}

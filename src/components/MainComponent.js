@@ -11,6 +11,9 @@ import CharacterGuide from './CharacterGuideComponent';
 import EpisodeGuide from './EpisodeGuideComponent';
 import SliderPuzzle from './SliderPuzzleComponent';
 import MemeGenerator from './MemeGeneratorComponent';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { ModalFooter } from 'reactstrap';
+
 
 
 
@@ -18,12 +21,31 @@ import MemeGenerator from './MemeGeneratorComponent';
 
 
 class Main extends Component {
+    
       render() {
+
+        const HomePage = () => {
             return (
-                <React.Fragment>
-                    <Home />
-                    <EpisodeGuide />
-                </React.Fragment>
+                <Home />
+            );
+        }
+
+        const Episodes = () => {
+            return (
+                <EpisodeGuide />
+            );
+        }
+
+        
+            return (
+                <div>
+                    <Header />
+                    <Switch>
+                        <Route path='/home' component={HomePage} />
+                        <Route path='/episodes' component={Episodes} />
+                        <Redirect to='/home' />
+                    </Switch>
+                </div>
             );
         }
     }
