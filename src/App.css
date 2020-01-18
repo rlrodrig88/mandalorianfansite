@@ -44,6 +44,7 @@
 .navbar {
   font-family: "mandalore_titleregular";
   font-size: 20px;
+  text-align: center;
 }
 
 .eptitle {
@@ -57,9 +58,8 @@
 }
 
 .logo {
-  max-height: 300px;
 }
 
 .center {
-  justify-content: center;
+  max-height: 300px;
 }

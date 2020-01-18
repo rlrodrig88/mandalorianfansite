@@ -20,6 +20,7 @@ const Navigation = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
+    
     <div className="navblack navbar-dark">
       <Navbar expand="md" >
         <NavbarBrand href="/">Home</NavbarBrand>
@@ -42,6 +43,7 @@ const Navigation = (props) => {
         </Collapse>
       </Navbar>
     </div>
+    
   );
 }
 
