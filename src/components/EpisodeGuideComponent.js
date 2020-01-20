@@ -7,16 +7,17 @@ import { Link } from 'react-router-dom';
 function RenderEpisode({ep}) {
   return (
     
-    <Col key={ep.id} lg={6}>
+    <Col className={ep.color2} key={ep.id} lg={6}>
     <Card>
       
-      <CardBody>
+      <CardBody className={ep.colorcard}>
+        
         <img src={ep.imagescn} className="floatleft" />
         <CardText className={ep.color}>{ep.name}</CardText>
       
         <CardText >{ep.sum_short}</CardText>
         <CardText ><strong>Directed by:</strong> {ep.director}<br /><strong>Written by:</strong> {ep.writer}</CardText>
-        
+
       </CardBody>
     </Card>
     </Col>

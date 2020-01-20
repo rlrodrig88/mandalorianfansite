@@ -33,140 +33,113 @@
 
 }
 
-.card-img-overlay h5 {
-  color: white;
-}
-
-
-
 .navbar {
   font-family: "mandalore_titleregular";
   font-size: 20px;
-  text-align: center;
-}
-
-
-
-
-.eptitle {
-  font-family: "mandaloreregular";
-  background-color: rgba(0, 0, 0, 0.15);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor1 {
-  font-family: "mandaloreregular";
-  background-color: rgba(112,105,89, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor2 {
-  font-family: "mandaloreregular";
-  background-color: rgba(185,118,112, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor3 {
-  font-family: "mandaloreregular";
-  background-color: rgba(165,184,190, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor4 {
-  font-family: "mandaloreregular";
-  background-color: rgba(177,114,37, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}git 
-.eptitlecolor5 {
-  font-family: "mandaloreregular";
-  background-color: rgba(188,173,154, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor6 {
-  font-family: "mandaloreregular";
-  background-color: rgba(232,82,67, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor7 {
-  font-family: "mandaloreregular";
-  background-color: rgba(17,68,97, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-.eptitlecolor8 {
-  font-family: "mandaloreregular";
-  background-color: rgba(133,100,81, 0.3);
-  text-align: center;
-  font-size: 28px;
-  border-radius: 10px;
-}
-
-.credits {
-  font-size: 10;
 }
 
 .logo {
   max-height: 300px;
 }
 
+.eptitle {
+  font-family: "mandaloreregular";
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor1 {
+  background-color: rgba(112,105,89, 0.3);
+}
+.epcardcolor1 {
+  background-color: rgba(112,105,89, 0.1);
+}
+.eptitlecolor2 {
+  background-color: rgba(185,118,112, 0.3);
+}
+.epcardcolor2 {
+  background-color: rgba(185,118,112, 0.1);
+}
+.eptitlecolor3 {
+  background-color: rgba(165,184,190, 0.3);
+}
+.epcardcolor3 {
+  background-color: rgba(165,184,190, 0.1);
+}
+.eptitlecolor4 {
+  background-color: rgba(177,114,37, 0.3);
+}
+.epcardcolor4 {
+  background-color: rgba(177,114,37, 0.1);
+}
+.eptitlecolor5 {
+  background-color: rgba(188,173,154, 0.3);
+}
+.epcardcolor5 {
+  background-color: rgba(188,173,154, 0.1);
+}
+.eptitlecolor6 {
+  background-color: rgba(232,82,67, 0.3);
+}
+.epcardcolor6 {
+  background-color: rgba(232,82,67, 0.1);
+}
+.eptitlecolor7 {
+  background-color: rgba(17,68,97, 0.3);
+}
+.epcardcolor7 {
+  background-color: rgba(17,68,97, 0.1);
+}
+.eptitlecolor8 {
+  background-color: rgba(133,100,81, 0.3);
+}
+.epcardcolor8 {
+  background-color: rgba(133,100,81, 0.1);
+}
+
 .card {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.2s ease-in-out;
-  box-sizing: border-box;
-  background-image: url("beanstalk.png");
+  
+  background: linear-gradient(
+              rgba(112,105,89, 0),
+              rgba(112,105,89, 0.1)
+             ),
+             url("");
+
   max-width: 540px;
   border: 1px solid #000;
   margin-top:10px;
   margin-bottom:10px;
+  padding: 0px;
   border-radius: 10px;
+   
 }
 
 .card:hover {
   box-shadow: 0 6px 6px rgba(0,0,0,0.19), 0 7px 7px rgba(0,0,0,0.23);
   transform: scale(1.01);
 }
- 
 
-.card > .card-inner {
-  padding:0px;
+.card .body {
+  padding: 0px;
 }
+ 
 .card h2, h3 {
     text-align: center;
-    font-family: '';
-    
-    
 }
 
 .card p {
     text-align: center;
 }
 
-.card img {
-    float: left;
-    max-height: 200px;
-    max-width: 200px;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.24);
-    border-radius: 10px 10px 10px 10px;
-    
-    
-}
+
 .card .floatleft{
   float: left;
-  max-height: 200px;
-  
-  border-radius: 10px 00px 10px 10px;
-  
-  
 }
 
+.card img {
+  max-height: 200px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.24);
+  border-radius: 10px 00px 10px 10px;
+}
