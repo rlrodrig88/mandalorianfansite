@@ -55,6 +55,62 @@
   font-size: 28px;
   border-radius: 10px;
 }
+.eptitlecolor1 {
+  font-family: "mandaloreregular";
+  background-color: rgba(112,105,89, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor2 {
+  font-family: "mandaloreregular";
+  background-color: rgba(185,118,112, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor3 {
+  font-family: "mandaloreregular";
+  background-color: rgba(165,184,190, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor4 {
+  font-family: "mandaloreregular";
+  background-color: rgba(177,114,37, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}git 
+.eptitlecolor5 {
+  font-family: "mandaloreregular";
+  background-color: rgba(188,173,154, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor6 {
+  font-family: "mandaloreregular";
+  background-color: rgba(232,82,67, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor7 {
+  font-family: "mandaloreregular";
+  background-color: rgba(17,68,97, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.eptitlecolor8 {
+  font-family: "mandaloreregular";
+  background-color: rgba(133,100,81, 0.3);
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+}
 
 .credits {
   font-size: 10;
@@ -100,7 +156,7 @@
     float: left;
     max-height: 200px;
     max-width: 200px;
-    
+    box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.24);
     border-radius: 10px 10px 10px 10px;
     
     

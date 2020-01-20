@@ -12,7 +12,7 @@ function RenderEpisode({ep}) {
       
       <CardBody>
         <img src={ep.imagescn} className="floatleft" />
-        <CardText className="eptitle">{ep.name}</CardText>
+        <CardText className={ep.color}>{ep.name}</CardText>
       
         <CardText >{ep.sum_short}</CardText>
         <CardText ><strong>Directed by:</strong> {ep.director}<br /><strong>Written by:</strong> {ep.writer}</CardText>
