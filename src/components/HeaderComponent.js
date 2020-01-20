@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return(
           <React.Fragment>
-            <div className="container center"><img src="/assets/images/logo.jpg" className="img-fluid logo center" alt="Mandolorian Logo"></img></div>
+            <div className="container logo"><img src="/assets/images/logo.jpg" className="img-fluid logo center" alt="Mandolorian Logo"></img></div>
             <Navigation />
           </React.Fragment>
         );

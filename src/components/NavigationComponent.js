@@ -23,7 +23,7 @@ const Navigation = (props) => {
     
     <div className="navblack navbar-dark">
       <Navbar expand="md" >
-        <NavbarBrand href="/">Home</NavbarBrand>
+        <NavbarBrand href="/home">Home</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
