@@ -9,11 +9,11 @@ import Navigation from './NavigationComponent';
 import Footer from './FooterComponent';
 import CharacterGuide from './CharacterGuideComponent';
 import EpisodeGuide from './EpisodeGuideComponent';
+import EpisodeInfo from './EpisodeInfoComponent';
 import SliderPuzzle from './SliderPuzzleComponent';
 import MemeGenerator from './MemeGeneratorComponent';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import { ModalFooter } from 'reactstrap';
-
+import { Link, Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { EPISODES } from '../shared/Episodes';
 
 
 
@@ -21,7 +21,12 @@ import { ModalFooter } from 'reactstrap';
 
 
 class Main extends Component {
-    
+    constructor(props) {
+        super(props);
+        this.state = {
+          episodes: EPISODES,
+        };
+      }
       render() {
 
         const HomePage = () => {
@@ -36,18 +41,25 @@ class Main extends Component {
             );
         }
 
+        const EpisodeWithId = ({match}) => {
+            return (
+                <EpisodeInfo episode={this.state.episodes.filter(episode => episode.id === +match.params.episodeId)[0] } />
+            );
+        }
+
         
             return (
                 <div>
                     <Header />
                     <Switch>
-                        <Route path='/home' component={HomePage} />
-                        <Route path='/episodes' component={Episodes} />
+                        <Route exact path='/home' component={HomePage} />
+                        <Route exact path='/episodes' component={Episodes} />
+                        <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>
                 </div>
             );
         }
-    }
+}
 
 export default Main;

@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import { Container, Col, Card, Row, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Container, Col, Card, Row, CardImg, CardImgOverlay, CardText, CardBody, Media, CardTitle } from 'reactstrap';
 import { EPISODES } from '../shared/Episodes';
 import { Link } from 'react-router-dom';
-
+import './EpisodeGuide.css';
 
 function RenderEpisode({ep}) {
   return (
     
     <Col className={ep.color2} key={ep.id} lg={6}>
-    <Card>
+    
+    <Card className="epcard">
+    
       
-      <CardBody className={ep.colorcard}>
+    <Media body  className={ep.colorcard}>
+    <Link to={`/episodes/${ep.id}`}><img src={ep.imagescn} className="floatleft" /> </Link>
         
-        <img src={ep.imagescn} className="floatleft" />
-        <CardText className={ep.color}>{ep.name}</CardText>
+        <CardText className={ep.color}>
+        {ep.name}
+        </CardText>
       
         <CardText >{ep.sum_short}</CardText>
         <CardText ><strong>Directed by:</strong> {ep.director}<br /><strong>Written by:</strong> {ep.writer}</CardText>
-
-      </CardBody>
+        
+        </Media >
+       
     </Card>
+    
     </Col>
     
   );
@@ -34,7 +40,6 @@ class EpisodeGuide extends Component {
     super(props);
     this.state = {
       episodes: EPISODES,
-      selectedEpisode: null
     };
   }
     render() {

@@ -10,7 +10,7 @@ export const EPISODES = [
         director: "Dave Filoni",
         writer: "Jon Favreau",
         color: "eptitle eptitlecolor1",
-        colorcard: "epcardcolor1"
+        colorcard: "epcardcolor1 stretched-link"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const EPISODES = [
         director: "Rick Famuyiwa",
         writer: "Jon Favreau",
         color: "eptitle eptitlecolor2",
-        colorcard: "epcardcolor2"
+        colorcard: "epcardcolor2 stretched-link"
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export const EPISODES = [
         director: "Deborah Chow",
         writer: "Jon Favreau",
         color: "eptitle eptitlecolor3",
-        colorcard: "epcardcolor3"
+        colorcard: "epcardcolor3 stretched-link"
     },
     {
         id: 4,
@@ -49,11 +49,11 @@ export const EPISODES = [
         director: "Bryce Dallas Howard",
         writer: "Jon Favreau",
         color: "eptitle eptitlecolor4",
-        colorcard: "epcardcolor4"
+        colorcard: "epcardcolor4 stretched-link"
     },
     {
         id: 5,
-        name: "Chapter5: The Gunslinger",
+        name: "Chapter 5: The Gunslinger",
         image: "/assets/images/eps/s01e05vul.jpg",
         imagescn: "/assets/images/eps/s01e05scn.jpg",
         imagetb: "/assets/images/eps/s01e05tb.jpg",
