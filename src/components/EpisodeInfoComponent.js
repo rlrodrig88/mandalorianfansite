@@ -18,25 +18,21 @@ function RenderEpisode({episode}) {
 }
 
 function NextEpisodeLink({episodeId}) {
-    return(
-        
-    );
+    return
 }
 
 function EpisodeInfo(props) {
     
     if (props.episode) {
         
-        console.log(epnext);
+    
         return (
             <div className="container">
                 <div className="row">
                     <div className="col">
                         
-                        <h2><Link to="/episodes">Episode List</Link> / {props.episode.name}</h2>
+                        <h2><Link to="/episodes">Episodes</Link> / {props.episode.name}</h2>
                         <hr />
-                        <h1><Link to="/episodes">Previous</Link></h1>
-                        <h1><Link to="/episodes">Next</Link></h1>
                     </div>
                 </div>
                 <div className="row">
