@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './SliderPuzzle.css';
 
 class SliderPuzzle extends Component {
-    
+  
     render() {
         return(
           <div>
-            <h1>Slider Puzzle</h1>
+            <h3>Slider Puzzle</h3>
 
             <div id="table" style={{display: 'table'}}>
                <div id="row1" style={{display: 'table-row'}}>
@@ -26,7 +26,6 @@ class SliderPuzzle extends Component {
               </div>
 
             </div>
-            
           </div>
         ); 
       }
