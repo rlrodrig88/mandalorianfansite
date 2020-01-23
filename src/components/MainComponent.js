@@ -47,6 +47,11 @@ class Main extends Component {
             );
         }
 
+        const Puzzle = () => {
+            return (
+                <SliderPuzzle />
+            );
+        }
         
             return (
                 <div>
@@ -54,6 +59,7 @@ class Main extends Component {
                     <Switch>
                         <Route exact path='/home' component={HomePage} />
                         <Route exact path='/episodes' component={Episodes} />
+                        <Route exact path='/puzzle' component={Puzzle} />                        
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>
