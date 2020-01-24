@@ -14,11 +14,6 @@ import SliderPuzzle from './SliderPuzzleComponent';
 import MemeGenerator from './MemeGeneratorComponent';
 import { Link, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { EPISODES } from '../shared/Episodes';
-import Meme from './MemeComponent.js';
-
-
-
-
 
 class Main extends Component {
     constructor(props) {
@@ -47,6 +42,11 @@ class Main extends Component {
             );
         }
 
+        const Meme = () => {
+            return (
+                <MemeGenerator />
+            );
+        }
         
             return (
                 <div>
@@ -54,6 +54,7 @@ class Main extends Component {
                     <Switch>
                         <Route exact path='/home' component={HomePage} />
                         <Route exact path='/episodes' component={Episodes} />
+                        <Route exact path='/meme' component={Meme} />
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>
