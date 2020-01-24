@@ -17,9 +17,6 @@ import { EPISODES } from '../shared/Episodes';
 
 
 
-
-
-
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -47,6 +44,11 @@ class Main extends Component {
             );
         }
 
+        const MemeGenerator = () => {
+            return (
+                <MemeGenerator />
+            );
+        }
         
             return (
                 <div>
@@ -54,6 +56,7 @@ class Main extends Component {
                     <Switch>
                         <Route exact path='/home' component={HomePage} />
                         <Route exact path='/episodes' component={Episodes} />
+                        <Route exact path='/memegenerator' component={MemeGenerator} />
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>
