@@ -1,8 +1,11 @@
-/*BODY { */
-/*background: #AAAAAA;*/
-/*}*/
-#table {border: 2px solid black;}
 
+#table {
+    display: table;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+/* Use 300px image size */
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
   display: table-cell;
   width: 100px;
@@ -12,6 +15,7 @@
   cursor: pointer;
 }
 
+/* Use 375px image size */
 @media (min-width: 500px) {
     .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
       width: 125px;
@@ -20,6 +24,7 @@
     }  
 }
 
+/* Use 600px image size */
 @media (min-width: 700px) {
     .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
       width: 200px;
@@ -28,6 +33,7 @@
     }  
 }
 
+/* Use 900px image size */
 @media (min-width: 1200px) {
     .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
       width: 300px;
