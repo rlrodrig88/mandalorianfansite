@@ -20,9 +20,9 @@ class QuoteGenerator extends Component {
     
     render() {
         return (
-            <div>
-                <div>"{this.state.quotes[this.state.quoteId].text}"</div>                
-                <button onClick={this.RandomQuoteId}>Random Quote</button>
+            <div >
+                <div class="text quote-text">"{this.state.quotes[this.state.quoteId].text}"</div>                
+                <button class="btn btn-secondary text" onClick={this.RandomQuoteId}>Random Quote</button>
             </div>
         );
     }

@@ -103,7 +103,7 @@ class SliderPuzzle extends Component {
                   <div id="cell33" class="tile9" style={{display: 'table-cell'}} onClick={this.clickTile.bind(this,3,3)}></div>
               </div>
             </div>
-            <div className="row">
+            <div className="row mb-4">
                 <div className="col-2 offset-3 mt-4 d-flex justify-content-center">
                     <Button onClick={this.shuffle}>Shuffle</Button>
                 </div>

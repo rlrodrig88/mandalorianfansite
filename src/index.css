@@ -25,3 +25,47 @@ code {
   text-size: 20px;
   
 }
+
+/* Homepage  */
+
+.home-background {
+  height: 900px;
+  background-image: url("/assets/images/homeBackground.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.summary-text {
+  font-size: 20px;
+  height: 300px;
+  background: #000;
+  text-align: center;
+  padding-top:50px;
+}
+
+.trailer {
+  padding: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  height: 300px;
+  background: #000;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+    font-family: "mandalore_titleregular";
+    color: #FFF;
+}
+
+.quote-text {
+    font-size: 25px;
+    color: rgba(255,255,255,.5);
+    padding: 75px 50px;
+}
+
