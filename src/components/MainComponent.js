@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import Home from './HomeComponent';
-import QuoteGenerator from './QuoteGeneratorComponent';
 import ImageGallery from './ImageGalleryComponent';
 import Countdown from './CountdownComponent';
 import Header from './HeaderComponent';
