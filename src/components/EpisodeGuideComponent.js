@@ -4,7 +4,7 @@ import { EPISODES } from '../shared/Episodes';
 import { Link } from 'react-router-dom';
 import './EpisodeGuide.css';
 
-function RenderEpisode({ep}) {
+function RenderEpisodeCard({ep}) {
   return (
     
     <Col className={ep.color2} key={ep.id} lg={6}>
@@ -43,15 +43,15 @@ class EpisodeGuide extends Component {
     };
   }
     render() {
-      const episodesList = this.state.episodes.map(ep => {
+      const episodesCardList = this.state.episodes.map(ep => {
         return (
-            <RenderEpisode ep={ep} />
+            <RenderEpisodeCard ep={ep} />
         );
       });
         return(
           <Container>
           <Row>
-            {episodesList}
+            {episodesCardList}
             </Row>
             </Container>
         ); 

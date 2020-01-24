@@ -3,7 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, Breadcrum
 import { Link } from 'react-router-dom';
 import './EpisodeInfo.css';
 
-function RenderEpisode({episode}) {
+function RenderEpisodePage({episode}) {
     return(
         <div className="col m-1">
             <Card>
@@ -36,7 +36,7 @@ function EpisodeInfo(props) {
                     </div>
                 </div>
                 <div className="row">
-                    <RenderEpisode episode={props.episode} />
+                    <RenderEpisodePage episode={props.episode} />
                 </div>
             </div>
         );

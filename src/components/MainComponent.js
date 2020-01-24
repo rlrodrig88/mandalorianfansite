@@ -14,7 +14,7 @@ import SliderPuzzle from './SliderPuzzleComponent';
 import MemeGenerator from './MemeGeneratorComponent';
 import { Link, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { EPISODES } from '../shared/Episodes';
-
+import Meme from './MemeComponent.js';
 
 
 
