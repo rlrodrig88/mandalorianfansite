@@ -22,11 +22,18 @@ class Main extends Component {
           episodes: EPISODES,
         };
       }
+
       render() {
 
         const HomePage = () => {
             return (
                 <Home />
+            );
+        }
+
+        const Characters = () => {
+            return (
+                <CharacterGuide />
             );
         }
 
@@ -53,6 +60,7 @@ class Main extends Component {
                     <Header />
                     <Switch>
                         <Route exact path='/home' component={HomePage} />
+                        <Route exact path='/characters' component={Characters} />
                         <Route exact path='/episodes' component={Episodes} />
                         <Route exact path='/meme' component={Meme} />
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
