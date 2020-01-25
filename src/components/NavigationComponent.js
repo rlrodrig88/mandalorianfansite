@@ -28,7 +28,7 @@ const Navigation = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#">Character Guide</NavLink>
+              <NavLink href="/characters">Character Guide</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/episodes">Episode Guide</NavLink>
@@ -37,7 +37,7 @@ const Navigation = (props) => {
               <NavLink href="/puzzle">Puzzle</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Meme Generator</NavLink>
+              <NavLink href="/meme">Meme Generator</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

@@ -13,11 +13,6 @@ import MemeGenerator from './MemeGeneratorComponent';
 import { Link, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { EPISODES } from '../shared/Episodes';
 
-
-
-
-
-
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -25,11 +20,18 @@ class Main extends Component {
           episodes: EPISODES,
         };
       }
+
       render() {
 
         const HomePage = () => {
             return (
                 <Home />
+            );
+        }
+
+        const Characters = () => {
+            return (
+                <CharacterGuide />
             );
         }
 
@@ -45,9 +47,17 @@ class Main extends Component {
             );
         }
 
+
         const Puzzle = () => {
             return (
                 <SliderPuzzle />
+              );
+              }
+
+        const Meme = () => {
+            return (
+                <MemeGenerator />
+
             );
         }
         
@@ -56,8 +66,10 @@ class Main extends Component {
                     <Header />
                     <Switch>
                         <Route exact path='/home' component={HomePage} />
+                        <Route exact path='/characters' component={Characters} />
                         <Route exact path='/episodes' component={Episodes} />
                         <Route exact path='/puzzle' component={Puzzle} />                        
+                        <Route exact path='/meme' component={Meme} />
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>
