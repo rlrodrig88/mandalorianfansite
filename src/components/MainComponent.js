@@ -61,12 +61,6 @@ class Main extends Component {
             );
         }
         
-        const Puzzle = () => {
-            return (
-                <SliderPuzzle />
-            );
-        }
-        
             return (
                 <div>
                     <Header />
