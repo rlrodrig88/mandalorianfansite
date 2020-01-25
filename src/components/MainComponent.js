@@ -50,6 +50,9 @@ class Main extends Component {
         const Meme = () => {
             return (
                 <MemeGenerator />
+            );
+        }
+        
         const Puzzle = () => {
             return (
                 <SliderPuzzle />
