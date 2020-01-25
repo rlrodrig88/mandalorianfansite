@@ -47,9 +47,17 @@ class Main extends Component {
             );
         }
 
+
+        const Puzzle = () => {
+            return (
+                <SliderPuzzle />
+              );
+              }
+
         const Meme = () => {
             return (
                 <MemeGenerator />
+
             );
         }
         
@@ -66,6 +74,7 @@ class Main extends Component {
                         <Route exact path='/home' component={HomePage} />
                         <Route exact path='/characters' component={Characters} />
                         <Route exact path='/episodes' component={Episodes} />
+                        <Route exact path='/puzzle' component={Puzzle} />                        
                         <Route exact path='/meme' component={Meme} />
                         <Route exact path='/puzzle' component={Puzzle} />                        
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
