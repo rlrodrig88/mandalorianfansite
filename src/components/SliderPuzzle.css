@@ -1,0 +1,56 @@
+.slider-container {
+    margin-top: 50px;
+}
+
+#table {
+    display: table;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+
+/* Use 300px image size */
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+  display: table-cell;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  background: url(/assets/images/slider-image-1-xs.jpg); 
+  cursor: pointer;
+}
+
+/* Use 375px image size */
+@media (min-width: 500px) {
+    .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+      width: 125px;
+      height: 125px;
+      background: url(/assets/images/slider-image-1-sm.jpg); 
+    }  
+}
+
+/* Use 600px image size */
+@media (min-width: 700px) {
+    .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+      width: 200px;
+      height: 200px;
+      background: url(/assets/images/slider-image-1-md.jpg); 
+    }  
+}
+
+/* Use 750px image size */
+@media (min-width: 1200px) {
+    .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+      width: 250px;
+      height: 250px;
+      background: url(/assets/images/slider-image-1-lg.jpg); 
+    }  
+}
+.tile1 {background-position: left top;}
+.tile2 {background-position: center top;}
+.tile3 {background-position: right top;}
+.tile4 {background-position: left center;}
+.tile5 {background-position: center center;}
+.tile6 {background-position: right center;}
+.tile7 {background-position: left bottom;}
+.tile8 {background-position: center bottom;}
+.tile9 {background: gray; cursor: default;}

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: NewsGothic-Bold;
+  src: url("/assets/fonts/NewsGothicStd-Bold.otf");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -23,6 +28,77 @@ code {
 .epcard {
   background-color: (0,0,0.0.3);
   text-size: 20px;
+}
+
+
+/* Homepage  */
+
+.home-background {
+  height: 900px;
+  background-image: url("/assets/images/homeBackground.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-background {
+    background:#000
+}
+
+iframe {
+    padding-top: 20px;
+    width: 100%; 
+    height: 56.25vw; /* 100/56.25 = 560/315 = 1.778 */
+    background:#000
+}
+
+.summary-text {
+  font-family: "NewsGothic-Bold";
+  height: 300px;
+  font-size: 17px;
+  background: #000;
+  text-align: center;
+  padding: 80px 40px 50px 40px;
+  color: #E1BE11;
+}
+
+.trailer {
+  padding: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  height: 400px;
+  background: #000;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+    font-family: "mandalore_titleregular";
+}
+
+.quote-text {
+    height: 250px;
+    font-size: 17px;
+    color: #FFF;
+    padding: 75px 25px 0px 25px;
+}
+
+
+
+@media (min-width: 700px) {
+ 
+  .quote-text {
+    font-size: 22px;
+  } 
+  
+  .summary-text {
+    font-size: 22px;
+  }
+  
 }
 
 * {
@@ -117,3 +193,4 @@ font-family: VT323, monospace;
 font-size: 25px;
 text-align: cen
 }
+
