@@ -84,8 +84,8 @@ class SliderPuzzle extends Component {
     render() {
 
         return(
-          <div>
-            <h3>Slider Puzzle</h3>
+          <div class="slider-container">
+            <h3 class="text">Slider Puzzle</h3>
             <div id="table">
                <div id="row1" style={{display: 'table-row'}}>
                   <div id="cell11" class="tile1" style={{display: 'table-cell'}} onClick={this.clickTile.bind(this,1,1)}></div>
