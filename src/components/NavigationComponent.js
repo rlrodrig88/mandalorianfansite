@@ -34,7 +34,7 @@ const Navigation = (props) => {
               <NavLink href="/episodes">Episode Guide</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Puzzle</NavLink>
+              <NavLink href="/puzzle">Puzzle</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/meme">Meme Generator</NavLink>

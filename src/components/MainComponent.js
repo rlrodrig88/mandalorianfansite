@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import Home from './HomeComponent';
-import QuoteGenerator from './QuoteGeneratorComponent';
 import ImageGallery from './ImageGalleryComponent';
 import Countdown from './CountdownComponent';
 import Header from './HeaderComponent';
@@ -52,6 +50,9 @@ class Main extends Component {
         const Meme = () => {
             return (
                 <MemeGenerator />
+        const Puzzle = () => {
+            return (
+                <SliderPuzzle />
             );
         }
         
@@ -63,6 +64,7 @@ class Main extends Component {
                         <Route exact path='/characters' component={Characters} />
                         <Route exact path='/episodes' component={Episodes} />
                         <Route exact path='/meme' component={Meme} />
+                        <Route exact path='/puzzle' component={Puzzle} />                        
                         <Route path='/episodes/:episodeId' component={EpisodeWithId} />
                         <Redirect to='/home' />
                     </Switch>
