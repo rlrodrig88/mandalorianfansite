@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^7.1.2",
     "aws-sdk": "^2.608.0",
     "bootstrap": "4.0.0",
+    "gh-pages": "^2.2.0",
+    "homepage": "https://rlrodrig88.github.io/mandalorianfansite",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-popper": "0.9.2",
@@ -15,15 +17,16 @@
     "react-router-dom": "4.2.2",
     "react-scripts": "3.3.0",
     "reactstrap": "5.0.0",
-    "yarn": "^1.21.1",
-    "semantic-ui-react": "^0.88.2"
-
+    "semantic-ui-react": "^0.88.2",
+    "yarn": "^1.21.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
