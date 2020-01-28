@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.1183b5e9.chunk.css",
-    "main.js": "/static/js/main.80fa6093.chunk.js",
-    "main.js.map": "/static/js/main.80fa6093.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2dcc6573.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2dcc6573.js.map",
-    "static/css/2.bb4ba17c.chunk.css": "/static/css/2.bb4ba17c.chunk.css",
-    "static/js/2.a734f537.chunk.js": "/static/js/2.a734f537.chunk.js",
-    "static/js/2.a734f537.chunk.js.map": "/static/js/2.a734f537.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.cb0c257880221f9ede60e8ef9646de0e.js": "/precache-manifest.cb0c257880221f9ede60e8ef9646de0e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.bb4ba17c.chunk.css.map": "/static/css/2.bb4ba17c.chunk.css.map",
-    "static/css/main.1183b5e9.chunk.css.map": "/static/css/main.1183b5e9.chunk.css.map",
-    "static/js/2.a734f537.chunk.js.LICENSE": "/static/js/2.a734f537.chunk.js.LICENSE",
-    "static/media/App.css": "/static/media/mandalorexpand.7df20cfe.woff2"
+    "main.css": "/mandalorianfansite/static/css/main.6600b295.chunk.css",
+    "main.js": "/mandalorianfansite/static/js/main.583d41ed.chunk.js",
+    "main.js.map": "/mandalorianfansite/static/js/main.583d41ed.chunk.js.map",
+    "runtime-main.js": "/mandalorianfansite/static/js/runtime-main.556856a2.js",
+    "runtime-main.js.map": "/mandalorianfansite/static/js/runtime-main.556856a2.js.map",
+    "static/css/2.bb4ba17c.chunk.css": "/mandalorianfansite/static/css/2.bb4ba17c.chunk.css",
+    "static/js/2.a734f537.chunk.js": "/mandalorianfansite/static/js/2.a734f537.chunk.js",
+    "static/js/2.a734f537.chunk.js.map": "/mandalorianfansite/static/js/2.a734f537.chunk.js.map",
+    "index.html": "/mandalorianfansite/index.html",
+    "precache-manifest.eafe57e5d40450699b6bd3183f8161bf.js": "/mandalorianfansite/precache-manifest.eafe57e5d40450699b6bd3183f8161bf.js",
+    "service-worker.js": "/mandalorianfansite/service-worker.js",
+    "static/css/2.bb4ba17c.chunk.css.map": "/mandalorianfansite/static/css/2.bb4ba17c.chunk.css.map",
+    "static/css/main.6600b295.chunk.css.map": "/mandalorianfansite/static/css/main.6600b295.chunk.css.map",
+    "static/js/2.a734f537.chunk.js.LICENSE": "/mandalorianfansite/static/js/2.a734f537.chunk.js.LICENSE",
+    "static/media/App.css": "/mandalorianfansite/static/media/mandalorexpand.7df20cfe.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.2dcc6573.js",
+    "static/js/runtime-main.556856a2.js",
     "static/css/2.bb4ba17c.chunk.css",
     "static/js/2.a734f537.chunk.js",
-    "static/css/main.1183b5e9.chunk.css",
-    "static/js/main.80fa6093.chunk.js"
+    "static/css/main.6600b295.chunk.css",
+    "static/js/main.583d41ed.chunk.js"
   ]
 }
