@@ -37,11 +37,11 @@
     }  
 }
 
-/* Use 750px image size */
+/* Use 900px image size */
 @media (min-width: 1200px) {
     .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 0px;
       background: url(/assets/images/slider-image-1-lg.jpg); 
     }  
 }
