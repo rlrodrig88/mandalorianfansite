@@ -17,10 +17,6 @@ function RenderEpisodePage({ episode }) {
   );
 }
 
-function NextEpisodeLink({ episodeId }) {
-  return
-}
-
 function EpisodeInfo(props) {
 
   if (props.episode) {

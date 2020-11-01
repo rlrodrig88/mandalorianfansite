@@ -13,7 +13,7 @@ function RenderEpisodeCard({ ep }) {
 
 
         <Media body className={ep.colorcard}>
-          <Link to={`/episodes/${ep.id}`}><img src={ep.imagescn} className="floatleft" /> </Link>
+          <Link to={`/episodes/${ep.id}`}><img src={ep.imagescn} className="floatleft" alt="episode" /> </Link>
 
           <CardText className={ep.color}>
             {ep.name}

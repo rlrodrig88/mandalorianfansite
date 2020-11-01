@@ -4,20 +4,9 @@ import {
   CardText, CardBody, Media,
 } from 'reactstrap';
 import Fade from 'react-reveal/Bounce';
-import { Card, Image, Reveal } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 import { CHARACTERS } from '../shared/Characters';
 import './CharacterGuides.css';
-
-const Hidden = () => (
-  <Reveal animated='move'>
-    <Reveal.Content visible>
-      <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' size='small' />
-    </Reveal.Content>
-    <Reveal.Content hidden>
-      <Image src='https://react.semantic-ui.com/images/avatar/large/chris.jpg' size='small' />
-    </Reveal.Content>
-  </Reveal>
-)
 
 function RenderCharacter({ ch }) {
   return (
