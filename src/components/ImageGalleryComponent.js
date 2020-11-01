@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class ImageGallery extends Component {
-    render() {
-        return 
-              
-          
-      }
+  render() {
+    return
+
+
   }
+}
 
 export default ImageGallery;
