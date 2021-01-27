@@ -49,31 +49,31 @@ class SliderPuzzle extends Component {
         var cell = document.getElementById("cell"+row+column);
         var tile = cell.className;
 
-        if (tile!="tile9") { 
+        if (tile!=="tile9") { 
            //Check if empty to right
            if (column<3) {
-             if ( document.getElementById("cell"+row+(column+1)).className=="tile9") {
+             if ( document.getElementById("cell"+row+(column+1)).className==="tile9") {
                this.swapTiles("cell"+row+column,"cell"+row+(column+1));
                return;
              }
            }
            //Check if empty to left
            if (column>1) {
-             if ( document.getElementById("cell"+row+(column-1)).className=="tile9") {
+             if ( document.getElementById("cell"+row+(column-1)).className==="tile9") {
                this.swapTiles("cell"+row+column,"cell"+row+(column-1));
                return;
              }
            }
              //Check if empty above
            if (row>1) {
-             if ( document.getElementById("cell"+(row-1)+column).className=="tile9") {
+             if ( document.getElementById("cell"+(row-1)+column).className==="tile9") {
                this.swapTiles("cell"+row+column,"cell"+(row-1)+column);
                return;
              }
            }
            //Check if empty below
            if (row<3) {
-             if ( document.getElementById("cell"+(row+1)+column).className=="tile9") {
+             if ( document.getElementById("cell"+(row+1)+column).className==="tile9") {
                this.swapTiles("cell"+row+column,"cell"+(row+1)+column);
                return;
              }
