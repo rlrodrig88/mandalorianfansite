@@ -6,11 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  NavLink
 } from 'reactstrap';
 
 
@@ -20,7 +16,7 @@ const Navigation = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    
+
     <div className="navblack navbar-dark">
       <Navbar expand="md" >
         <NavbarBrand href="/home">Home</NavbarBrand>
@@ -43,7 +39,7 @@ const Navigation = (props) => {
         </Collapse>
       </Navbar>
     </div>
-    
+
   );
 }
 
